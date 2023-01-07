@@ -7,6 +7,12 @@ public class EmailInfo {
 	private String toEmailId;
 	
 	private String fromName;
+	
+	private String host;
+	
+	private String userName;
+	
+	private String password;
 
 	public String getEmailBody() {
 		return emailBody;
@@ -30,6 +36,30 @@ public class EmailInfo {
 
 	public void setFromName(String fromName) {
 		this.fromName = fromName;
+	}
+
+	public String getHost() {
+		return host;
+	}
+
+	public void setHost(String host) {
+		this.host = host;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 }

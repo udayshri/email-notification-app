@@ -25,10 +25,31 @@
 				<div class="login d-flex align-items-center py-5">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-9 col-lg-8 mx-auto">
-								<h5 class="login-heading mb-4 text-success" id="sendEmailResponse"></h5>
+							<div class="col-md-6 col-lg-8 mx-auto">
+								<h5 class="login-heading mb-2 text-success" id="sendEmailResponse"></h5>
 
-								<!-- Sign In Form -->
+								<p class="text-light bg-dark">Email Properties</p>
+								<form>
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="host"
+											placeholder="Enter Email Host" required> <label
+											for="host">Email Host</label>
+									</div>
+									
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="hostUserName"
+											placeholder="Enter Username" required> <label
+											for="hostUserName">Username</label>
+									</div>
+									
+									<div class="form-floating mb-3">
+										<input type="password" class="form-control" id="hostUserPassword"
+											placeholder="Enter Host Password" required> <label
+											for="hostUserPassword">Enter Password</label>
+									</div>
+									
+								</form>
+								<p class="text-light bg-dark">Email Content</p>
 								<form>
 									<div class="form-floating mb-3">
 										<input type="text" class="form-control" id="name"

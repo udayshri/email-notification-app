@@ -16,7 +16,13 @@ public class EmailController {
 	
 	@PostMapping("/sendEmail")
 	public String sendEmail(@RequestBody EmailInfo emailInfo) {
-		return emailService.sendEmail(emailInfo);
+		String response = "";
+		try {
+			response = emailService.sendEmail(emailInfo);
+		} catch (Exception e) {
+			response = "Failed to Send to Email "+emailInfo.getToEmailId();
+		}
+		return response;
 	}
 
 }
