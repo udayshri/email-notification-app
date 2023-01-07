@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+<title>Email App</title>
+
+<link rel="stylesheet" type="text/css"
+	th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+<script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+<script type="text/javascript"
+	th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/homeActions.js}"></script>
+</head>
+<body>
+	<div class="text-center p-3" style="background-color: orange">
+    Eficens Systems Inc - Email Notification App
+  	</div>
+	<div class="container-fluid ps-md-0">
+		<div class="row g-0">
+			<div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+			<div class="col-md-8 col-lg-6">
+				<div class="login d-flex align-items-center py-5">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-9 col-lg-8 mx-auto">
+								<h5 class="login-heading mb-4 text-success" id="sendEmailResponse"></h5>
+
+								<!-- Sign In Form -->
+								<form>
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="name"
+											placeholder="Enter Full Name" required> <label
+											for="name">Message From</label>
+									</div>
+									
+									<div class="form-floating mb-3">
+										<input autocomplete="off" type="email" class="form-control" id="emailId"
+											placeholder="Message To Whom - Email Id" required> <label
+											for="emailId">Email address</label>
+									</div>
+									
+									<div class="form-group mb-3">
+										<textarea class="form-control" id="emailBody"
+											placeholder="Email Body" rows="10"></textarea>
+									</div>
+									
+									<div class="d-grid">
+										<button
+											class="btn btn-lg btn-warning btn-login text-uppercase fw-bold mb-2"
+											id="sendEmail">Send Email</button>
+									</div>
+
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="text-center p-3" style="background-color: orange">
+    Eficens Systems Inc © 2023 Copyright
+  	</div>
+
+</body>
+
+</html>
